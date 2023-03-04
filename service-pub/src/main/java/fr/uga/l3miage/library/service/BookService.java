@@ -63,4 +63,7 @@ public interface BookService extends BaseService<Book, Long> {
      * @throws EntityNotFoundException if either the book or the author is not found
      */
     Book addAuthor(Long bookId, Long authorId) throws EntityNotFoundException;
+
+    static void deleteBook(Long id) {
+    }
 }
